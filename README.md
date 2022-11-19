@@ -5,7 +5,7 @@ Bash scripts that I suppose to be usefull
 
 - Create a [file].service at /etc/systemd/system containing :
 
-    `
+    ```
     [Unit]
     Description=Automate disabling CPUs on low battery.
 
@@ -15,7 +15,7 @@ Bash scripts that I suppose to be usefull
 
     [Install]
     WantedBy=multi-user.target
-    `
+    ```
 
 - `chmod 644 /etc/systemd/system/[file].service`
 
