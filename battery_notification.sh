@@ -9,6 +9,7 @@ do
 	then
 		notify-send --app-name='Batterie chargée' --urgency=critical '80% : Veuillez débrancher le chargeur.'
 	elif [[ $var -lt 30 ]]
+	then
 		notify-send --app-name='Batterie faible' --urgency=critical '30% : Veuillez brancher le chargeur.'
 	fi
 	sleep 60
