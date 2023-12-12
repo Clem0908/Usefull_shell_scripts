@@ -19,14 +19,15 @@ then
 	exit -1
 fi
 
-DIR64="$WINEPREFIX/drive_c/windows/system32"
+DIR64="$WINEPREFIX/drive_c/windows/syswow64"
 
 if [ -d "$DIR64" ]
 then
 	cp ./x64/*.dll $WINEPREFIX/drive_c/windows/system32
+	cp ./x32/*.dll $WINEPREFIX/drive_c/windows/syswow64
+else
+	cp ./x32/*.dll $WINEPREFIX/drive_c/windows/system32
 fi
-
-cp ./x32/*.dll $WINEPREFIX/drive_c/windows/syswow64
 
 winecfg > /dev/null 2>&1
 wineserver -k
