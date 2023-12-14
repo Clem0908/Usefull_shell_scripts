@@ -1,5 +1,5 @@
-# Usefull bash scripts
-Bash scripts that I suppose to be usefull
+# Usefull shell scripts
+Shell scripts that I find usefull
 
 ## Make auto disable cpu autostart with systemd
 
